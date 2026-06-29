@@ -1,0 +1,5 @@
+[
+    {"identifier": "123456789", "username": "my_channel"},
+    {"identifier": "@some_group"},
+    {"identifier": "https://t.me/joinchat/abc123"}
+]
