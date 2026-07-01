@@ -42,6 +42,7 @@ services:
       - ./chats.json:/app/chats.json:ro
       - ./media:/app/media
       - ./logs:/app/logs
+      - ./sessions:/app/sessions
 #    restart: unless-stopped
     networks:
       - mc-network
