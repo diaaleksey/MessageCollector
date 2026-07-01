@@ -31,7 +31,7 @@ TG_PHONE_NUMBER = os.getenv("TG_PHONE_NUMBER")
 TG_PHONE_CODE = os.getenv("TG_PHONE_CODE")
 TG_PASSWORD = os.getenv("TG_PASSWORD")
 # Настройки Userbot
-USERBOT_NAME = "myUserBot"
+USERBOT_NAME = "userbot"
 # SESSION_NAME = str(SESSIONS_DIR / "userbot_session")
 SESSION_NAME = concat(USERBOT_NAME,"_session")
 # Настройки MTProto Proxy
