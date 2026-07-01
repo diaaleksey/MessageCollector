@@ -19,7 +19,7 @@ class MessageCollector:
         """
         self.logger, self.action_logger = setup_logger(client_name)
         self.client: Optional[Client] = None
-        # self.use_proxy = use_proxy
+        self.use_proxy = False
         # self.proxy_rotation = proxy_rotation
         self.current_proxy = None
         self.is_running = False  # Флаг состояния клиента
@@ -55,9 +55,9 @@ class MessageCollector:
                 api_id=TG_API_ID,
                 api_hash=TG_API_HASH,
                 phone_number=TG_PHONE_NUMBER,
-                # phone_code=TG_PHONE_CODE,
-                # password=TG_PASSWORD,
-                # proxy=proxy,  # Добавляем прокси
+                phone_code=TG_PHONE_CODE,
+                password=TG_PASSWORD,
+                proxy=proxy,  # Добавляем прокси
                 workdir=SESSIONS_DIR,
                 # Дополнительные настройки для стабильности
                 sleep_threshold=30,  # Таймаут при проблемах с сетью
